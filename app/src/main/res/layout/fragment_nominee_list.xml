@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Container for nominee details -->
+    <LinearLayout
+        android:id="@+id/nominee_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" />
+
+    <!-- Add Nominee Button -->
+    <Button
+        android:id="@+id/button_add_nominee"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Nominee"
+    android:layout_gravity="center_horizontal" />
+
+    <!-- Proceed Button -->
+    <Button
+        android:id="@+id/button_proceed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Proceed to Setup Election"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="16dp" />
+</LinearLayout>

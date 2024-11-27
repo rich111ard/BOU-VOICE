@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_bank_wide">
+
+    <!-- Core navigation fragments -->
+    <fragment
+        android:id="@+id/navigation_manage"
+        android:name="com.bou.bouvoice.ui.manage.ManageFragment"
+        tools:layout="@layout/fragment_manage">
+
+        <action
+            android:id="@+id/action_manageFragment_to_respondFragment"
+            app:destination="@id/respondFragment" />
+
+        <action
+            android:id="@+id/action_manageFragment_to_suggestFragment"
+            app:destination="@id/navigation_suggest" />
+
+        <action
+            android:id="@+id/action_manageFragment_to_resolvedFragment"
+            app:destination="@id/resolvedFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_bank_wide"
+        android:name="com.bou.bouvoice.ui.bank_wide.BankWideFragment"
+        tools:layout="@layout/fragment_bank_wide" />
+
+    <fragment
+        android:id="@+id/navigation_department"
+        android:name="com.bou.bouvoice.ui.departs.DepartmentFragment"
+        tools:layout="@layout/fragment_department" />
+
+    <fragment
+        android:id="@+id/navigation_feedback"
+        android:name="com.bou.bouvoice.ui.feedback.FeedbackFragment"
+        tools:layout="@layout/fragment_feedback" />
+
+    <fragment
+        android:id="@+id/welcomeSuggestFragment"
+        android:name="com.bou.bouvoice.ui.suggest.WelcomeSuggestFragment"
+        android:label="Welcome Suggest"
+        tools:layout="@layout/fragment_welcome_suggest">
+        <action
+            android:id="@+id/action_welcomeSuggestFragment_to_suggestFragment"
+            app:destination="@id/navigation_suggest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/departmentDetailsFragment"
+        android:name="com.bou.bouvoice.ui.departs.DepartmentDetailsFragment"
+        tools:layout="@layout/fragment_department_details">
+        <argument
+            android:name="departmentName"
+            app:argType="string" />
+
+        <!-- Navigation action to SuccessFragment -->
+        <action
+            android:id="@+id/action_departmentDetailsFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
+
+
+    <!-- Suggest Fragment -->
+    <fragment
+        android:id="@+id/navigation_suggest"
+        android:name="com.bou.bouvoice.ui.suggest.SuggestFragment"
+        android:label="Suggest"
+        tools:layout="@layout/fragment_suggest">
+        <argument
+            android:name="suggestionText"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <action
+            android:id="@+id/action_suggestionFragment_to_departmentDetailsFragment"
+            app:destination="@id/departmentDetailsFragment" />
+
+        <!-- Actions to success fragment -->
+        <action
+            android:id="@+id/action_manageFragment_to_suggestFragment"
+            app:destination="@id/navigation_suggest" />
+        <action
+            android:id="@+id/action_suggestFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+
+        <!-- Actions to department fragments -->
+        <action
+            android:id="@+id/action_suggestFragment_to_internalAuditFragment"
+            app:destination="@id/internalAuditFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_itOperationsFragment"
+            app:destination="@id/itOperationsFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_businessAutomationFragment"
+            app:destination="@id/businessAutomationFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_humanResourceFragment"
+            app:destination="@id/humanResourceFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_administrativeServicesFragment"
+            app:destination="@id/administrativeServicesFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_securityFragment"
+            app:destination="@id/securityFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_medicalFragment"
+            app:destination="@id/medicalFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_pensionAdministrationFragment"
+            app:destination="@id/pensionAdministrationFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_accountsFragment"
+            app:destination="@id/accountsFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_nationalPaymentSystemsFragment"
+            app:destination="@id/nationalPaymentSystemsFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_bankingFragment"
+            app:destination="@id/bankingFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_currencyFragment"
+            app:destination="@id/currencyFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_financialMarketsFragment"
+            app:destination="@id/financialMarketsFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_legalAffairsFragment"
+            app:destination="@id/legalAffairsFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_communicationsFragment"
+            app:destination="@id/communicationsFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_boardAffairsFragment"
+            app:destination="@id/boardAffairsFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_strategyQualityFragment"
+            app:destination="@id/strategyQualityFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_riskComplianceFragment"
+            app:destination="@id/riskComplianceFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_economicResearchFragment"
+            app:destination="@id/economicResearchFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_commercialBankingFragment"
+            app:destination="@id/commercialBankingFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_nonBankFinancialFragment"
+            app:destination="@id/nonBankFinancialFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_financialStabilityFragment"
+            app:destination="@id/financialStabilityFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_economicAdvisorFragment"
+            app:destination="@id/economicAdvisorFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_petroleumInvestmentFundFragment"
+            app:destination="@id/petroleumInvestmentFundFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_procurementDisposalFragment"
+            app:destination="@id/procurementDisposalFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_kitchenWelfareFragment"
+            app:destination="@id/kitchenWelfareFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_cleaningFragment"
+            app:destination="@id/cleaningFragment" />
+        <action
+            android:id="@+id/action_suggestFragment_to_bankWideSuggestionsFragment"
+            app:destination="@id/bankWideSuggestionsFragment" />
+
+        <!-- Back to suggestFragment -->
+        <action
+            android:id="@+id/action_accountsFragment_to_suggestFragment"
+            app:popUpTo="@id/navigation_suggest"
+            app:popUpToInclusive="true"
+            app:destination="@id/navigation_suggest" />
+    </fragment>
+
+    <!-- Department fragments definitions -->
+    <fragment
+        android:id="@+id/internalAuditFragment"
+        android:name="com.bou.bouvoice.ui.departs.InternalAuditFragment"
+        android:label="Internal Audit"
+        tools:layout="@layout/fragment_internal_audit" />
+
+    <fragment
+        android:id="@+id/accountsFragment"
+        android:name="com.bou.bouvoice.ui.departs.AccountsFragment"
+        android:label="Accounts Department"
+        tools:layout="@layout/fragment_accounts">
+        <!-- Action to success fragment -->
+        <action
+            android:id="@+id/action_accountsFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+        <action
+            android:id="@+id/action_accountsFragment_to_suggestFragment"
+            app:destination="@id/navigation_suggest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/itOperationsFragment"
+        android:name="com.bou.bouvoice.ui.departs.ItOperationsFragment"
+        android:label="IT Operations and Infrastructure"
+        tools:layout="@layout/fragment_it_operations" />
+
+    <fragment
+        android:id="@+id/businessAutomationFragment"
+        android:name="com.bou.bouvoice.ui.departs.BusinessAutomationFragment"
+        android:label="Business Automation"
+        tools:layout="@layout/fragment_business_automation" />
+
+    <fragment
+        android:id="@+id/humanResourceFragment"
+        android:name="com.bou.bouvoice.ui.departs.HumanResourceFragment"
+        android:label="Human Resource"
+        tools:layout="@layout/fragment_human_resource" />
+
+    <fragment
+        android:id="@+id/bankWideSuggestionsFragment"
+        android:name="com.bou.bouvoice.ui.departs.BankWideSuggestionsFragment"
+        android:label="Bank-wide Suggestions"
+        tools:layout="@layout/fragment_bank_wide_suggestions" />
+
+    <fragment
+        android:id="@+id/administrativeServicesFragment"
+        android:name="com.bou.bouvoice.ui.departs.AdministrativeServicesFragment"
+        android:label="Administrative Services"
+        tools:layout="@layout/fragment_administrative_services" />
+
+    <fragment
+        android:id="@+id/securityFragment"
+        android:name="com.bou.bouvoice.ui.departs.SecurityFragment"
+        android:label="Security"
+        tools:layout="@layout/fragment_security" />
+
+    <fragment
+        android:id="@+id/medicalFragment"
+        android:name="com.bou.bouvoice.ui.departs.MedicalFragment"
+        android:label="Medical"
+        tools:layout="@layout/fragment_medical" />
+
+    <fragment
+        android:id="@+id/pensionAdministrationFragment"
+        android:name="com.bou.bouvoice.ui.departs.PensionAdministrationFragment"
+        android:label="Pension Administration"
+        tools:layout="@layout/fragment_pension_administration" />
+
+    <fragment
+        android:id="@+id/nationalPaymentSystemsFragment"
+        android:name="com.bou.bouvoice.ui.departs.NationalPaymentSystemsFragment"
+        android:label="National Payment Systems"
+        tools:layout="@layout/fragment_national_payment_systems" />
+
+    <fragment
+        android:id="@+id/bankingFragment"
+        android:name="com.bou.bouvoice.ui.departs.BankingFragment"
+        android:label="Banking"
+        tools:layout="@layout/fragment_banking" />
+
+    <fragment
+        android:id="@+id/currencyFragment"
+        android:name="com.bou.bouvoice.ui.departs.CurrencyFragment"
+        android:label="Currency"
+        tools:layout="@layout/fragment_currency" />
+
+    <fragment
+        android:id="@+id/financialMarketsFragment"
+        android:name="com.bou.bouvoice.ui.departs.FinancialMarketsFragment"
+        android:label="Financial Markets"
+        tools:layout="@layout/fragment_financial_markets" />
+
+    <fragment
+        android:id="@+id/legalAffairsFragment"
+        android:name="com.bou.bouvoice.ui.departs.LegalAffairsFragment"
+        android:label="Legal Affairs"
+        tools:layout="@layout/fragment_legal_affairs" />
+
+    <fragment
+        android:id="@+id/communicationsFragment"
+        android:name="com.bou.bouvoice.ui.departs.CommunicationsFragment"
+        android:label="Communications"
+        tools:layout="@layout/fragment_communications" />
+
+    <fragment
+        android:id="@+id/boardAffairsFragment"
+        android:name="com.bou.bouvoice.ui.departs.BoardAffairsFragment"
+        android:label="Board Affairs"
+        tools:layout="@layout/fragment_board_affairs" />
+
+    <fragment
+        android:id="@+id/strategyQualityFragment"
+        android:name="com.bou.bouvoice.ui.departs.StrategyQualityFragment"
+        android:label="Strategy Quality Assurance"
+        tools:layout="@layout/fragment_strategy_quality" />
+
+    <fragment
+        android:id="@+id/riskComplianceFragment"
+        android:name="com.bou.bouvoice.ui.departs.RiskComplianceFragment"
+        android:label="Risk and Compliance Management"
+        tools:layout="@layout/fragment_risk_compliance" />
+
+    <fragment
+        android:id="@+id/economicResearchFragment"
+        android:name="com.bou.bouvoice.ui.departs.EconomicResearchFragment"
+        android:label="Economic Research"
+        tools:layout="@layout/fragment_economic_research" />
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.bou.bouvoice.ui.departs.StatisticsFragment"
+        android:label="Statistics"
+        tools:layout="@layout/fragment_statistics" />
+
+    <fragment
+        android:id="@+id/commercialBankingFragment"
+        android:name="com.bou.bouvoice.ui.departs.CommercialBankingFragment"
+        android:label="Commercial Banking"
+        tools:layout="@layout/fragment_commercial_banking" />
+
+    <fragment
+        android:id="@+id/nonBankFinancialFragment"
+        android:name="com.bou.bouvoice.ui.departs.NonBankFinancialFragment"
+        android:label="Non-Bank Financial Institutions"
+        tools:layout="@layout/fragment_non_bank_financial" />
+
+    <fragment
+        android:id="@+id/financialStabilityFragment"
+        android:name="com.bou.bouvoice.ui.departs.FinancialStabilityFragment"
+        android:label="Financial Stability"
+        tools:layout="@layout/fragment_financial_stability" />
+
+    <fragment
+        android:id="@+id/economicAdvisorFragment"
+        android:name="com.bou.bouvoice.ui.departs.EconomicAdvisorFragment"
+        android:label="Economic Advisor to Governor"
+        tools:layout="@layout/fragment_economic_advisor" />
+
+    <fragment
+        android:id="@+id/petroleumInvestmentFundFragment"
+        android:name="com.bou.bouvoice.ui.departs.PetroleumInvestmentFundFragment"
+        android:label="Petroleum Investment Fund"
+        tools:layout="@layout/fragment_petroleum_investment_fund" />
+
+    <fragment
+        android:id="@+id/procurementDisposalFragment"
+        android:name="com.bou.bouvoice.ui.departs.ProcurementDisposalFragment"
+        android:label="Procurement and Disposal"
+        tools:layout="@layout/fragment_procurement_disposal" />
+
+    <fragment
+        android:id="@+id/kitchenWelfareFragment"
+        android:name="com.bou.bouvoice.ui.departs.KitchenWelfareFragment"
+        android:label="Kitchen Welfare"
+        tools:layout="@layout/fragment_kitchen_welfare" />
+
+    <fragment
+        android:id="@+id/cleaningFragment"
+        android:name="com.bou.bouvoice.ui.departs.CleaningFragment"
+        android:label="Cleaning"
+        tools:layout="@layout/fragment_cleaning" />
+
+    <!-- Define successFragment for navigation -->
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.bou.bouvoice.ui.departs.SuccessFragment"
+        android:label="Success"
+        tools:layout="@layout/fragment_success">
+
+        <!-- Action to navigate to WelcomeSuggestFragment -->
+        <action
+            android:id="@+id/action_successFragment_to_welcomeSuggestFragment"
+            app:destination="@id/welcomeSuggestFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/respondFragment"
+        android:name="com.bou.bouvoice.ui.manage.RespondFragment"
+        android:label="Respond"
+        tools:layout="@layout/fragment_respond">
+    </fragment>
+
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.bou.bouvoice.ui.feedback.FeedbackFragment"
+        android:label="FeedbackFragment"
+        tools:layout="@layout/fragment_feedback" />
+
+    <!-- Add VoteFragment -->
+    <fragment
+        android:id="@+id/electionSetupFragment"
+        android:name="com.bou.bouvoice.ui.menu.ElectionSetupFragment"
+        android:label="Election Setup"
+        tools:layout="@layout/fragment_election_setup" >
+    <action
+        android:id="@+id/action_electionSetupFragment_to_votingDetailsFragment"
+        app:destination="@id/votingDetailsFragment" />
+
+        <action
+            android:id="@+id/action_nomineeListFragment_to_electionSetupFragment"
+            app:destination="@id/electionSetupFragment" />
+
+
+        <action
+            android:id="@+id/action_nomineeListFragment_to_votingDetailsFragment"
+            app:destination="@id/votingDetailsFragment" />
+
+    </fragment>
+
+
+    <!-- Add navigation action for the Vote section -->
+    <action
+        android:id="@+id/action_menu_vote_to_electionSetupFragment"
+        app:destination="@id/electionSetupFragment" />
+
+
+
+
+    <fragment
+        android:id="@+id/votingDetailsFragment"
+        android:name="com.bou.bouvoice.ui.menu.VotingDetailsFragment"
+        android:label="Voting Details"
+        tools:layout="@layout/fragment_voting_details">
+        <action
+            android:id="@+id/action_votingDetailsFragment_to_nomineeListFragment"
+            app:destination="@id/nomineeListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nomineeListFragment"
+        android:name="com.bou.bouvoice.ui.menu.NomineeListFragment"
+        android:label="Nominee List"
+        tools:layout="@layout/fragment_nominee_list">
+        <action
+            android:id="@+id/action_nomineeListFragment_to_votingDetailsFragment"
+            app:destination="@id/votingDetailsFragment" />
+        <action
+            android:id="@+id/action_nomineeListFragment_to_choosePeopleFragment"
+            app:destination="@id/choosePeopleFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/choosePeopleFragment"
+        android:name="com.bou.bouvoice.ui.menu.ChoosePeopleFragment"
+        android:label="Choose People" >
+        <action
+            android:id="@+id/action_choosePeopleFragment_to_specificPeopleFragment"
+            app:destination="@id/specificPeopleFragment" />
+        <action
+            android:id="@+id/action_choosePeopleFragment_to_finalVotingPageFragment"
+            app:destination="@id/finalVotingPageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/specificPeopleFragment"
+        android:name="com.bou.bouvoice.ui.menu.SpecificPeopleFragment"
+        android:label="Specific People" >
+
+        <action
+            android:id="@+id/action_specificPeopleFragment_to_finalVotingPageFragment"
+            app:destination="@id/finalVotingPageFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/finalVotingPageFragment"
+        android:name="com.bou.bouvoice.ui.menu.FinalVotingPageFragment"
+        android:label="Final Voting Page"
+        tools:layout="@layout/fragment_final_voting_page">
+
+        <!-- Action to go to SpecificPeopleFragment -->
+        <action
+            android:id="@+id/action_finalVotingPageFragment_to_specificPeopleFragment"
+            app:destination="@id/specificPeopleFragment" />
+
+        <!-- Action to go to NomineeListFragment -->
+        <action
+            android:id="@+id/action_finalVotingPageFragment_to_nomineeListFragment"
+            app:destination="@id/nomineeListFragment" />
+
+        <!-- Action to go to ElectionSuccessFragment -->
+        <action
+            android:id="@+id/action_finalVotingPageFragment_to_electionSuccessFragment"
+            app:destination="@id/electionSuccessFragment" />
+    </fragment>
+
+
+
+    <!-- Define the electionSuccessFragment -->
+    <fragment
+        android:id="@+id/electionSuccessFragment"
+        android:name="com.bou.bouvoice.ui.menu.ElectionSuccessFragment"
+        android:label="Election Success"
+        tools:layout="@layout/fragment_election_success">
+
+        <!-- Add action to navigate back to election setup page -->
+        <action
+            android:id="@+id/action_electionSuccessFragment_to_electionSetupFragment"
+            app:destination="@id/electionSetupFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resolvedFragment"
+        android:name="com.bou.bouvoice.ui.manage.ResolvedFragment"
+        android:label="Resolved"
+        tools:layout="@layout/fragment_resolved" />
+
+    <fragment
+        android:id="@+id/implementationsFragment"
+        android:name="com.bou.bouvoice.ui.menuItem.ImplementationsFragment"
+        android:label="Implementations"
+        tools:layout="@layout/fragment_implementations" />
+
+    <fragment
+        android:id="@+id/leadershipUpdatesFragment"
+        android:name="com.bou.bouvoice.ui.menuItem.LeadershipUpdatesFragment"
+        android:label="Leadership Updates"
+        tools:layout="@layout/fragment_leadership_updates" />
+
+    <fragment
+        android:id="@+id/prioritiesFragment"
+        android:name="com.bou.bouvoice.ui.menuItem.PrioritiesFragment"
+        android:label="Priorities"
+        tools:layout="@layout/fragment_priorities" />
+
+    <fragment
+        android:id="@+id/recycleBinFragment"
+        android:name="com.bou.bouvoice.ui.menuItem.RecycleBinFragment"
+        android:label="Recycle Bin"
+        tools:layout="@layout/fragment_recycle_bin" />
+
+    <fragment
+        android:id="@+id/printReportFragment"
+        android:name="com.bou.bouvoice.ui.menuItem.PrintReportFragment"
+        android:label="Print Report"
+        tools:layout="@layout/fragment_print_report" />
+
+
+
+
+
+
+
+
+
+
+
+</navigation>

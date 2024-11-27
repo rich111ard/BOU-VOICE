@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Priorities Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High-Priority Suggestions"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Suggestion 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Human Resources"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Develop a comprehensive employee benefits program, including mental health support."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Agrees -->
+            <TextView
+                android:id="@+id/agrees_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agrees: 150"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IT Operations &amp; Infrastructure"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upgrade the internal network infrastructure to ensure faster and more reliable connections."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Agrees -->
+            <TextView
+                android:id="@+id/agrees_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agrees: 120"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accounts"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Implement a real-time budget tracking system to allow department heads to monitor expenses."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Agrees -->
+            <TextView
+                android:id="@+id/agrees_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agrees: 130"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Communications"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Launch an internal newsletter to keep employees informed about new policies and developments."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Agrees -->
+            <TextView
+                android:id="@+id/agrees_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agrees: 110"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business Automation"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Implement automated systems for routine tasks to improve efficiency."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Agrees -->
+            <TextView
+                android:id="@+id/agrees_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agrees: 140"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 6 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currency"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Introduce digital tracking tools to improve currency distribution."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Agrees -->
+            <TextView
+                android:id="@+id/agrees_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agrees: 145"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 7 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Risk &amp; Compliance"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conduct quarterly risk assessments to ensure compliance."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Agrees -->
+            <TextView
+                android:id="@+id/agrees_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agrees: 135"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 8 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Economic Research"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Implement a comprehensive data analysis tool for real-time market tracking."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Agrees -->
+            <TextView
+                android:id="@+id/agrees_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agrees: 125"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 9 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Improve security measures through regular audits and training programs."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Agrees -->
+            <TextView
+                android:id="@+id/agrees_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agrees: 110"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 10 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Implement employee wellness programs to enhance overall health and productivity."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Agrees -->
+            <TextView
+                android:id="@+id/agrees_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agrees: 112"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

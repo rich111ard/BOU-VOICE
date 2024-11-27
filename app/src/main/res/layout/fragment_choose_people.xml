@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Title or Instructions -->
+    <TextView
+        android:id="@+id/title_choose_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose People to Vote"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <!-- Guideline Message -->
+    <TextView
+        android:id="@+id/guideline_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You can either choose specific individuals from the staff list for this voting activity, or you can proceed to include everyone."
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"/>
+
+    <!-- Button to choose specific people -->
+    <Button
+        android:id="@+id/button_choose_specific_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Specific People"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <!-- Divider or line for clarity -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Another guideline message -->
+    <TextView
+        android:id="@+id/guideline_message_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If you prefer not to specify individuals, click the button below to proceed and allow everyone to vote."
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"/>
+
+    <!-- Proceed Button -->
+    <Button
+        android:id="@+id/button_proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:padding="12dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

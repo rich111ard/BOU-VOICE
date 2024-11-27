@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/bottom_nav_color"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:elevation="4dp"> <!-- Added elevation for shadow effect -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <!-- Bank of Uganda Logo -->
+        <ImageView
+            android:id="@+id/bou_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/bou_logo_round"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true" /> <!-- Centered vertically -->
+
+        <!-- Bank Title -->
+        <TextView
+            android:id="@+id/bank_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank of Uganda"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@id/bou_image"
+        android:layout_centerVertical="true"
+        android:paddingEnd="8dp" /> <!-- Added padding for better spacing -->
+
+        <!-- Vote Section (LinearLayout) -->
+        <LinearLayout
+            android:id="@+id/vote_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="center"> <!-- Center content -->
+
+            <!-- Vote Button (ImageView) -->
+            <ImageView
+                android:id="@+id/vote_button"
+                android:layout_width="42dp"
+            android:layout_height="41dp"
+            android:src="@drawable/ic_vote"
+            android:contentDescription="@string/vote_button_description"
+            android:background="@android:color/transparent"
+                app:tint="@color/teal_200"
+            android:padding="0dp" /> <!-- Make it more tappable with padding -->
+
+            <!-- Vote Text (TextView) -->
+            <TextView
+                android:id="@+id/vote_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VOTE"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:paddingTop="2dp"
+                android:paddingBottom="0dp"  /> <!-- Added padding for spacing between icon and text -->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

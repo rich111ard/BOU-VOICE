@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "870552263740",
+    "firebase_url": "https://bou-voice-default-rtdb.firebaseio.com",
+    "project_id": "bou-voice",
+    "storage_bucket": "bou-voice.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870552263740:android:1b016802081b1cd0bf3739",
+        "android_client_info": {
+          "package_name": "com.bou.bouvoice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWqImU_rQr61q-bd9POezADbI5TgPVBLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

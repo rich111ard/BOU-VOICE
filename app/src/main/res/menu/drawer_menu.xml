@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_resolutions"
+        android:title="Implementations"
+        android:icon="@drawable/ic_implementations"
+        android:iconTint="@color/colorPrimary"
+        android:background="@drawable/menu_item_background" />
+
+    <item
+        android:id="@+id/nav_leadership_updates"
+        android:title="Leadership Updates"
+        android:icon="@drawable/ic_leadership_updates"
+        android:iconTint="@color/colorPrimary"
+        android:background="@drawable/menu_item_background" />
+
+    <item
+        android:id="@+id/nav_priorities"
+        android:title="Priorities"
+        android:icon="@drawable/ic_priorities"
+        android:iconTint="@color/colorPrimary"
+        android:background="@drawable/menu_item_background" />
+
+    <item
+        android:id="@+id/nav_vote"
+        android:title="Setup Vote"
+        android:icon="@drawable/ic_vote"
+        android:iconTint="@color/colorPrimary"
+        android:background="@drawable/menu_item_background" />
+
+    <item
+        android:id="@+id/nav_recycle_bin"
+        android:title="Recycle Bin"
+        android:icon="@drawable/ic_recycle_bin"
+        android:iconTint="@color/colorPrimary"
+        android:background="@drawable/menu_item_background" />
+
+    <item
+        android:id="@+id/nav_print_report"
+        android:title="Print Report"
+        android:icon="@drawable/ic_print_report"
+        android:iconTint="@color/colorPrimary"
+        android:background="@drawable/menu_item_background" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout"
+        android:iconTint="@color/colorPrimary"
+        android:background="@drawable/menu_item_background" />
+</menu>

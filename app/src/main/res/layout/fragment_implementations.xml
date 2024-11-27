@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Implementations Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Implemented Suggestions"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Suggestion 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Human Resources"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Develop a comprehensive onboarding program for new hires to improve retention and job satisfaction."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IT Operations &amp; Infrastructure"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upgrade the internal network infrastructure to ensure faster and more reliable connections for remote workers."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accounts"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Implement a real-time budget tracking system to allow department heads to monitor expenses more effectively."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Communications"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Establish a centralized communication platform for employees to receive updates and provide feedback."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currency"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Introduce automated systems for currency distribution to improve efficiency."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 6 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business Automation"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Automate internal workflows to reduce manual tasks and improve efficiency."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 7 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Risk &amp; Compliance"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conduct regular risk assessments to ensure compliance with regulations."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 8 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Procurement &amp; Disposal"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Establish a centralized procurement portal for better vendor management."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 9 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Improve security protocols with regular training and audits."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <!-- Suggestion 10 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Introduce employee wellness programs to improve mental and physical health."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

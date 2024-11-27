@@ -1,0 +1,286 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/final_voting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please confirm these details"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:paddingBottom="16dp" />
+
+    <!-- Section: Nominees -->
+    <TextView
+        android:id="@+id/nominees_section_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The election has the following nominees:"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/nominee_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Nominee 1 -->
+            <TextView
+                android:id="@+id/nominee1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nominee 1: John Okello"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Nominee 2 -->
+            <TextView
+                android:id="@+id/nominee2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nominee 2: Sarah Nabiryo"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Nominee 3 -->
+            <TextView
+                android:id="@+id/nominee3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nominee 3: James Katende"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Nominee 4 -->
+            <TextView
+                android:id="@+id/nominee4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nominee 4: Grace Kagina"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Checkbox to confirm nominees -->
+    <CheckBox
+        android:id="@+id/checkbox_confirm_nominees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I confirm this nominee list"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp" />
+
+    <!-- Section: Voters -->
+    <TextView
+        android:id="@+id/voters_section_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The following will vote:"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/voters_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Voter 1 -->
+            <TextView
+                android:id="@+id/voter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 1: Michael Kiwanuka"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 2 -->
+            <TextView
+                android:id="@+id/voter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 2: Agnes Lwanga"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 3 -->
+            <TextView
+                android:id="@+id/voter3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 3: Samuel Mukasa"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 4 -->
+            <TextView
+                android:id="@+id/voter4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 4: Alice Nakato"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 5 -->
+            <TextView
+                android:id="@+id/voter5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 5: Brian Tumusiime"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 6 -->
+            <TextView
+                android:id="@+id/voter6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 6: Catherine Ssenyonga"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 7 -->
+            <TextView
+                android:id="@+id/voter7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 7: David Nsubuga"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 8 -->
+            <TextView
+                android:id="@+id/voter8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 8: Irene Sanyu"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 9 -->
+            <TextView
+                android:id="@+id/voter9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 9: Henry Ouma"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 10 -->
+            <TextView
+                android:id="@+id/voter10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 10: Mary Kyomuhendo"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 11 -->
+            <TextView
+                android:id="@+id/voter11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 11: Robert Mbabazi"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 12 -->
+            <TextView
+                android:id="@+id/voter12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 12: Lydia Nantongo"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 13 -->
+            <TextView
+                android:id="@+id/voter13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 13: Peter Kafeero"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 14 -->
+            <TextView
+                android:id="@+id/voter14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 14: Janet Nankya"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+
+            <!-- Voter 15 -->
+            <TextView
+                android:id="@+id/voter15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter 15: George Muwanga"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Checkbox to confirm voters -->
+    <CheckBox
+        android:id="@+id/checkbox_confirm_voters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I confirm this voter list"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp" />
+
+    <!-- Buttons Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <!-- Edit Staff Button -->
+        <Button
+            android:id="@+id/button_edit_staff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Staff"
+            android:layout_weight="1" />
+
+        <!-- Edit Nominees Button -->
+        <Button
+            android:id="@+id/button_edit_nominees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Nominees"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Submit Election Button -->
+        <Button
+            android:id="@+id/button_submit_election"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

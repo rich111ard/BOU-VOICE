@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Content with Department Title and Other Descriptions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Department Title -->
+        <TextView
+            android:id="@+id/tvDepartmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department Title"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- "To Whom It Concerns" Checkbox -->
+        <CheckBox
+            android:id="@+id/checkboxToWhomItConcerns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To whom it concerns"
+            android:textSize="18sp"
+            android:checked="true" />
+
+        <!-- Explanation for 'To Whom It Concerns' -->
+        <TextView
+            android:id="@+id/toWhomItConcernsExplanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This checkbox is checked by default, indicating that your suggestion is directed to any relevant personnel. You can uncheck it to specify a particular team leader or director."
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Single Heading for Department Sections -->
+        <TextView
+            android:id="@+id/departmentSectionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Department Section"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Scrollable Container for Sections Checkboxes -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/sectionCheckboxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Example Checkboxes with Roles, Sections, and Names -->
+            <CheckBox
+                android:id="@+id/teamLeaderCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team Leader: Quality Assurance (Mr. Amin Patrick)"
+                android:textSize="16sp"
+                android:checked="false" />
+
+            <CheckBox
+                android:id="@+id/directorCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Director: Director (Dr. Kiwa Emmanuel)"
+                android:textSize="16sp"
+                android:checked="false" />
+
+            <!-- Error message for sections loading -->
+            <TextView
+                android:id="@+id/errorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No divisions found for this department"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="italic"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <!-- Additional checkboxes for sections can be dynamically added here -->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+
+    <!-- Bottom Buttons and Instruction message -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp"
+android:layout_gravity="bottom">
+
+<!-- Button Container for 'Go Back Home' and 'Submit' -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginBottom="15dp">
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Submit"
+        android:textSize="18sp" />
+</LinearLayout>
+
+<!-- Instruction Message -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Note: Your suggestions will be visible to authorized personnel in the selected department."
+    android:textColor="@color/colorPrimary"
+    android:textSize="14sp"
+    android:gravity="center" />
+</LinearLayout>
+
+    </FrameLayout>

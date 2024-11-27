@@ -1,0 +1,52 @@
+<!-- activity_login_overview.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Bank Logo (Centered) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bank of Uganda"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/bou_logo_round"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Welcome Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Bank of Uganda Voice"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingTop="24dp" />
+
+    <!-- New User Button -->
+    <Button
+        android:id="@+id/btn_new_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New User"
+        android:layout_marginTop="24dp" />
+
+    <!-- Existing User Button -->
+    <Button
+        android:id="@+id/btn_existing_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Existing User"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

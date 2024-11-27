@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    android:fillViewport="true">
+
+
+    <!-- A wrapping container to host all the content inside the ScrollView -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!-- Content container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="5dp">
+
+            <!-- Heading and Unresolved Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Title: Welcome to Your Suggestions Box -->
+                <TextView
+                    android:id="@+id/manage_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Suggestions Box"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+
+            <!-- Static Section: 13 Suggestions and Unresolved Button -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/suggestions_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13 Suggestions"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:gravity="start"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button_resolved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unresolved"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <!-- Scrollable Section for Suggestions -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Suggestion 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:padding="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:elevation="4dp">
+
+                    <!-- Department Name and Votes -->
+                    <TextView
+                        android:id="@+id/department_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Human Resource (Agrees: 150)"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="4dp" />
+
+                    <!-- Date and Time -->
+                    <TextView
+                        android:id="@+id/suggestion_date_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sent on: 2024-10-19 09:15 AM"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Suggestion Text -->
+                    <TextView
+                        android:id="@+id/suggestion_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="We recommend improving the work-life balance programs for employees by introducing flexible work hours and enhancing mental health support programs."
+                        android:textSize="16sp"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Buttons for Response and Referral -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        android:gravity="end">
+
+                        <!-- Respond Button -->
+                        <Button
+                            android:id="@+id/btn_respond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Respond"
+                            android:layout_marginEnd="12dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textColor="@android:color/white"
+                            android:minHeight="40dp"
+                            android:minWidth="80dp"
+                            android:padding="8dp" />
+
+                        <!-- Refer to Another Button -->
+                        <Button
+                            android:id="@+id/btn_refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Refer to Another"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textColor="@android:color/white"
+                            android:minHeight="40dp"
+                            android:minWidth="80dp"
+                            android:padding="8dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Suggestion 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:padding="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:elevation="4dp">
+
+                    <!-- Department Name and Votes -->
+                    <TextView
+                        android:id="@+id/department_name_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IT Operations &amp; Infrastructure (Agrees: 120)"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="4dp" />
+
+                    <!-- Date and Time -->
+                    <TextView
+                        android:id="@+id/suggestion_date_time_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sent on: 2024-10-18 03:45 PM"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Suggestion Text -->
+                    <TextView
+                        android:id="@+id/suggestion_content_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The remote work infrastructure needs significant improvement. We should invest in more secure VPN services and improve the speed of remote server access."
+                        android:textSize="16sp"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Buttons for Response and Referral -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        android:gravity="end">
+
+                        <!-- Respond Button -->
+                        <Button
+                            android:id="@+id/btn_respond_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Respond"
+                            android:layout_marginEnd="12dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textColor="@android:color/white"
+                            android:minHeight="40dp"
+                            android:minWidth="80dp"
+                            android:padding="8dp" />
+
+                        <!-- Refer to Another Button -->
+                        <Button
+                            android:id="@+id/btn_refer_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Refer to Another"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textColor="@android:color/white"
+                            android:minHeight="40dp"
+                            android:minWidth="80dp"
+                            android:padding="8dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Suggestion 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:padding="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:elevation="4dp">
+
+                    <!-- Department Name and Votes -->
+                    <TextView
+                        android:id="@+id/department_name_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accounts (Agrees: 95)"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="4dp" />
+
+                    <!-- Date and Time -->
+                    <TextView
+                        android:id="@+id/suggestion_date_time_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sent on: 2024-10-17 01:20 PM"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Suggestion Text -->
+                    <TextView
+                        android:id="@+id/suggestion_content_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="We need to streamline financial reporting processes to improve accuracy and reduce delays in month-end closings."
+                        android:textSize="16sp"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Buttons for Response and Referral -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        android:gravity="end">
+
+                        <!-- Respond Button -->
+                        <Button
+                            android:id="@+id/btn_respond_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Respond"
+                            android:layout_marginEnd="12dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textColor="@android:color/white"
+                            android:minHeight="40dp"
+                            android:minWidth="80dp"
+                            android:padding="8dp" />
+
+                        <!-- Refer to Another Button -->
+                        <Button
+                            android:id="@+id/btn_refer_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Refer to Another"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:textColor="@android:color/white"
+                            android:minHeight="40dp"
+                            android:minWidth="80dp"
+                            android:padding="8dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

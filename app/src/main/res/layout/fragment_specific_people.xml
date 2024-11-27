@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Search bar for filtering people -->
+    <!-- Search bar for filtering people -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for staff"
+        android:padding="8dp"
+        android:background="@android:color/white"
+        android:drawablePadding="8dp"
+        android:drawableStart="@android:drawable/ic_menu_search" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="16dp"> <!-- Space to avoid touching bottom buttons -->
+
+        <LinearLayout
+            android:id="@+id/people_list_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- List of people with checkboxes -->
+            <CheckBox
+                android:id="@+id/checkbox_person1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Okello" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grace Nakato" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Samuel Kizza" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alice Kabahweza" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="David Mugisha" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sarah Nabirye" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joseph Katumba" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mary Nambogo" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Isaac Lule" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miriam Tumwine" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peter Byaruhanga" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esther Namugambe" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Robert Okumu" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rose Katushabe" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="James Sekandi" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harriet Kyomugisha" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simon Wanyama" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agnes Nabukwasi" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Francis Olweny" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Victoria Namatovu" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Henry Musoke" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juliet Nsubuga" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edwin Ssemwanga" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diana Aanyu" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tom Mukama" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ruth Kawalya" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paul Mukama" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fiona Namuli" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brian Kabunga" />
+
+            <CheckBox
+                android:id="@+id/checkbox_person30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sarah Ainebyoona" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_proceed_people_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

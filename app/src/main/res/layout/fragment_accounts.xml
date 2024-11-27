@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="80dp"
+        android:fillViewport="true"
+        android:contentDescription="Scrollable content containing department selection and feedback options">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title for Accounts Department -->
+            <TextView
+                android:id="@+id/accountsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accounts Department"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Brief professional message -->
+            <TextView
+                android:id="@+id/accountsMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please select the appropriate recipient for your suggestions below. This feedback will be reviewed by the Accounts Department."
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Checkbox for 'To whom it concerns' -->
+            <CheckBox
+                android:id="@+id/toWhomItConcernsCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To whom it concerns"
+                android:textSize="18sp"
+                android:checked="true" />
+
+            <!-- Explanation for 'To whom it concerns' checkbox -->
+            <TextView
+                android:id="@+id/toWhomItConcernsExplanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This checkbox is checked by default, indicating that your suggestion is directed to any relevant personnel in the Accounts Department. You can uncheck it if you wish to specify a particular team leader or director."
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Section for Team Leaders -->
+            <TextView
+                android:id="@+id/teamLeadersTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Team Leader"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/teamLeadersCheckboxGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/teamLeader1Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Leader Finance" />
+
+                <CheckBox
+                    android:id="@+id/teamLeader2Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Leader Payroll" />
+
+                <CheckBox
+                    android:id="@+id/teamLeader3Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Leader Accounts Payable" />
+
+                <CheckBox
+                    android:id="@+id/teamLeader4Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team Leader Audit" />
+            </LinearLayout>
+
+            <!-- Section for Directors -->
+            <TextView
+                android:id="@+id/directorsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Director/Deputy Director"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/directorsCheckboxGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/director1Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Director of Finance" />
+
+                <CheckBox
+                    android:id="@+id/director2Checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deputy Director of Finance" />
+            </LinearLayout>
+
+            <!-- Buttons for Submit and Go Back Home -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/goBackHomeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go Back Home"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="16dp" />
+
+                <Button
+                    android:id="@+id/submitSuggestionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom instruction message -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:padding="16dp">
+
+        <!-- Instruction message -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note: Your suggestions will be visible to authorized personnel in the Accounts Department."
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+</FrameLayout>

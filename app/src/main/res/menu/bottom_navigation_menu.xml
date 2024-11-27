@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_manage"
+        android:icon="@drawable/ic_manage"
+        android:title="My Box" />
+    <item
+        android:id="@+id/navigation_suggest"
+        android:icon="@drawable/ic_suggest"
+        android:title="@string/suggest" />
+    <item
+        android:id="@+id/navigation_bank_wide"
+        android:icon="@drawable/ic_bank_wide"
+        android:title="@string/bank_wide" />
+    <item
+        android:id="@+id/navigation_department"
+        android:icon="@drawable/ic_department"
+        android:title="@string/department" />
+    <item
+        android:id="@+id/navigation_feedback"
+        android:icon="@drawable/ic_feedback"
+        android:title="@string/feedback" />
+</menu>

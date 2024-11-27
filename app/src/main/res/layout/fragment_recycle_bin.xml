@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Recycle Bin Title -->
+        <TextView
+            android:id="@+id/recycle_bin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ignored Suggestions"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- List of Ignored Suggestions -->
+        <!-- Suggestion 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Human Resources"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We recommend adding a mental health program to support employee well-being."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Retrieve Button -->
+            <Button
+                android:id="@+id/btn_retrieve_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retrieve"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/holo_green_light" />
+        </LinearLayout>
+
+        <!-- Add more suggestions similarly -->
+        <!-- Suggestion 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/department_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IT Operations &amp; Infrastructure"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/suggestion_content_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We need to improve remote access for better work-from-home efficiency."
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Retrieve Button -->
+            <Button
+                android:id="@+id/btn_retrieve_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retrieve"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/holo_green_light" />
+        </LinearLayout>
+
+        <!-- Continue adding more suggestions as needed -->
+
+    </LinearLayout>
+</ScrollView>

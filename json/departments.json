@@ -1,0 +1,95 @@
+{
+  "documents": [
+    {
+      "name": "departments/information_technology_operations",
+      "fields": {
+        "departmentName": {"stringValue": "Information Technology Operations"},
+        "sections": {
+          "arrayValue": {
+            "values": [
+              {"stringValue": "Director"},
+              {"stringValue": "Deputy Director"},
+              {"stringValue": "User Support"},
+              {"stringValue": "Cyber Security"},
+              {"stringValue": "IT Infrastructure Management"},
+              {"stringValue": "Network Administration"}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "departments/business_automation",
+      "fields": {
+        "departmentName": {"stringValue": "Business Automation"},
+        "sections": {
+          "arrayValue": {
+            "values": [
+              {"stringValue": "Director"},
+              {"stringValue": "Deputy Director"},
+              {"stringValue": "Quality Assurance"},
+              {"stringValue": "Data Warehousing"},
+              {"stringValue": "Application Development"},
+              {"stringValue": "Automation Support"}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "departments/human_resource",
+      "fields": {
+        "departmentName": {"stringValue": "Human Resource"},
+        "sections": {
+          "arrayValue": {
+            "values": [
+              {"stringValue": "Director"},
+              {"stringValue": "Deputy Director"},
+              {"stringValue": "Recruitment"},
+              {"stringValue": "Training and Development"},
+              {"stringValue": "Employee Relations"},
+              {"stringValue": "Benefits and Compensation"}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "departments/currency",
+      "fields": {
+        "departmentName": {"stringValue": "Currency"},
+        "sections": {
+          "arrayValue": {
+            "values": [
+              {"stringValue": "Director"},
+              {"stringValue": "Deputy Director"},
+              {"stringValue": "Currency Printing and Design"},
+              {"stringValue": "Distribution and Vault Management"},
+              {"stringValue": "Counterfeit Detection"},
+              {"stringValue": "Foreign Currency Management"}
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "departments/non_bank_services",
+      "fields": {
+        "departmentName": {"stringValue": "Non-Bank Services"},
+        "sections": {
+          "arrayValue": {
+            "values": [
+              {"stringValue": "Director"},
+              {"stringValue": "Deputy Director"},
+              {"stringValue": "Meal Services (Lunch)"},
+              {"stringValue": "Refreshments (Tea)"},
+              {"stringValue": "Cleaning Services"},
+              {"stringValue": "Transportation (Drivers)"},
+              {"stringValue": "Security Guards"}
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

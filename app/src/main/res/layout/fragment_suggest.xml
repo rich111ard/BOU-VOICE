@@ -1,0 +1,179 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".ui.suggest.SuggestFragment">
+
+        <!-- Scrollable Content Section -->
+        <ScrollView
+            android:id="@+id/suggestion_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="2dp"
+            android:padding="16dp"
+            android:scrollbars="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btn_submit_general_suggestion">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <!-- Title for Suggestion Box placed higher -->
+                        <TextView
+                            android:id="@+id/general_suggestion_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SUGGESTION BOX"
+                            android:textSize="28sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginBottom="24dp"
+                            android:layout_marginTop="2dp" />
+
+                        <!-- Original Text Description (unchanged) -->
+                        <TextView
+                            android:id="@+id/general_suggestion_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Use this box to share any thoughts, ideas, or suggestions you have to improve the department or organization. Your voice matters, and your suggestion will be reviewed accordingly. If no specific department is chosen, your suggestion will be directed to the appropriate person by default."
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintTop_toBottomOf="@id/general_suggestion_heading"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginBottom="16dp" />
+
+                        <!-- General Suggestion Input with bigger area -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/general_suggestion_input_box"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="4dp"
+                            app:cardCornerRadius="8dp"
+                            app:layout_constraintTop_toBottomOf="@id/general_suggestion_description"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginBottom="16dp"
+                            android:background="@android:color/white">
+
+                                <EditText
+                                    android:id="@+id/input_general_suggestion"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Type your suggestion here..."
+                                    android:textColor="@android:color/black"
+                                    android:background="@drawable/black_border"
+                                    android:padding="12dp"
+                                    android:minHeight="200dp"
+                                    android:gravity="top"
+                                    android:scrollbars="vertical"
+                                    android:maxLines="10"
+                                    android:paddingBottom="16dp"
+                                    android:paddingTop="16dp"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- Checkbox for Private Suggestion -->
+                        <CheckBox
+                            android:id="@+id/private_suggestion_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Keep this suggestion private (One-on-One Conversation)"
+                            android:textSize="14sp"
+                            app:layout_constraintTop_toBottomOf="@id/general_suggestion_input_box"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginBottom="16dp" />
+
+                        <!-- Departmental Suggestion Dropdown Section -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/department_suggestion_card"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10dp"
+                            android:backgroundTint="#DADA55"
+                            app:layout_constraintTop_toBottomOf="@id/private_suggestion_checkbox"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="12dp">
+
+                                        <TextView
+                                            android:id="@+id/department_suggestion_heading"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Direct Suggestion to Specific Department"
+                                            android:textSize="20sp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/colorPrimary"
+                                            android:layout_marginBottom="8dp" />
+
+                                        <TextView
+                                            android:id="@+id/department_suggestion_description"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="If you'd like to send your suggestion to a specific department, please choose from the list below."
+                                            android:textSize="14sp"
+                                            android:textColor="@color/colorPrimary"
+                                            android:layout_marginBottom="8dp" />
+
+                                        <!-- Department Dropdown Menu with increased size and color -->
+                                        <Spinner
+                                            android:id="@+id/department_dropdown"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:minHeight="60dp"
+                                            android:backgroundTint="@color/colorPrimary"
+                                            android:background="@drawable/black_border"
+                                            android:layout_marginBottom="16dp"/>
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- New Details Added Below the Dropdown Menu -->
+                        <TextView
+                            android:id="@+id/suggestion_visibility_info"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Note:\n- Any suggestion addressed outside your department will be considered a bank-wide suggestion and will be visible to everyone.\n- Suggestions to your department will be seen only by members within your department.\n- To keep your suggestion private, please check the 'Keep this suggestion private' checkbox above."
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimary"
+                            app:layout_constraintTop_toBottomOf="@id/department_suggestion_card"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <!-- Static Submit Button anchored at the bottom -->
+        <Button
+            android:id="@+id/btn_submit_general_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<!-- res/drawable/menu_item_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow effect -->
+    <item android:left="8dp" android:right="8dp" android:top="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#D3D3D3" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <!-- White background with padding -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</layer-list>

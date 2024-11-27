@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">BOU Voice</string>
+    <string name="manage">Manage</string>
+    <string name="suggest">Suggest</string>
+    <string name="bank_wide">Bank Wide</string>
+    <string name="department">Department</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="menu_icon_description">Menu Icon</string>
+    <string name="bou_logo_description">Bank of Uganda Logo</string>
+    <string name="vote_icon_description">Voting Icon</string>
+    <string name="bou_title">Bank of Uganda</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="vote_button_description">Vote button</string>
+    <string-array name="department_list">
+        <item>Select a Department</item>
+        <item>HR Department</item>
+        <item>Accounts Department</item>
+        <item>IT Department</item>
+        <item>Legal Department</item>
+        <item>Marketing Department</item>
+        <item>Operations Department</item>
+        <item>Finance Department</item>
+        <item>Sales Department</item>
+        <item>Customer Service Department</item>
+        <item>Research and Development Department</item>
+        <item>Quality Assurance Department</item>
+        <item>Public Relations Department</item>
+        <item>Logistics Department</item>
+        <item>Compliance Department</item>
+        <item>Training Department</item>
+        <item>Administration Department</item>
+        <item>Procurement Department</item>
+        <item>Risk Management Department</item>
+        <item>Business Development Department</item>
+        <item>Technical Support Department</item>
+        <item>Digital Marketing Department</item>
+        <item>Project Management Department</item>
+        <item>Information Technology Department</item>
+        <item>Strategic Planning Department</item>
+        <item>Investor Relations Department</item>
+        <item>Data Analytics Department</item>
+        <item>Facility Management Department</item>
+        <item>Corporate Communications Department</item>
+        <item>Legal Affairs Department</item>
+        <item>Internal Audit Department</item>
+        <item>Health and Safety Department</item>
+        <item>Environmental Affairs Department</item>
+        <item>Corporate Social Responsibility Department</item>
+    </string-array>
+
+    <string-array name="accounts_team_leaders">
+        <item>Team Leader Finance</item>
+        <item>Team Leader Payroll</item>
+        <item>Team Leader Accounts Payable</item>
+        <item>Team Leader Audit</item>
+    </string-array>
+
+    <string-array name="accounts_directors">
+        <item>Director of Finance</item>
+        <item>Deputy Director of Finance</item>
+    </string-array>
+
+    <string name="vote">Vote</string>
+    <string name="bank_of_uganda">Bank of Uganda</string>
+
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_storage_permission">Storage permission required to access files.</string>
+
+    <string-array name="department_array">
+        <item>Internal Audit</item>
+        <item>IT Operations &amp; Infrastructure</item>
+        <item>Business Automation</item>
+        <item>Human Resource</item>
+        <item>Administrative Services</item>
+        <item>Security</item>
+        <item>Medical</item>
+        <item>Pension Administration</item>
+        <item>Accounts</item>
+        <item>National Payment Systems</item>
+        <item>Banking</item>
+        <item>Currency</item>
+        <item>Financial Markets</item>
+        <item>Legal Affairs</item>
+        <item>Communications</item>
+        <item>Board Affairs</item>
+        <item>Strategy &amp; Quality Assurance</item>
+        <item>Risk &amp; Compliance Management</item>
+        <item>Economic Research</item>
+        <item>Statistics</item>
+        <item>Commercial Banking</item>
+        <item>Non-Bank Financial Institutions</item>
+        <item>Financial Stability</item>
+        <item>Economic Advisor to Governor</item>
+        <item>Petroleum Investment Fund</item>
+        <item>Procurement and Disposal</item>
+        <item>Kitchen Welfare</item>
+        <item>Cleaning</item>
+    </string-array>
+
+</resources>

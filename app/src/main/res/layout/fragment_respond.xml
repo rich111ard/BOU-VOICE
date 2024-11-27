@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5DC"
+    android:padding="16dp">
+
+    <!-- Title for the response page -->
+    <TextView
+        android:id="@+id/response_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respond to Suggestion"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Writing area for the response -->
+    <EditText
+        android:id="@+id/response_input"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Write your response here..."
+        android:padding="12dp"
+        android:gravity="top"
+        android:background="@drawable/border_box"
+        android:maxLines="5"
+        android:scrollbars="vertical" />
+
+    <!-- Checkboxes for response categories -->
+    <CheckBox
+        android:id="@+id/ignore_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ignore"
+        android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/implement_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To be Implemented" />
+
+    <CheckBox
+        android:id="@+id/pending_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submit_response_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Response"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Confirmation Message -->
+    <TextView
+        android:id="@+id/confirmation_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Election setup successful!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+
+    <!-- Explanation Text for Public/Private Checkboxes -->
+    <TextView
+        android:id="@+id/explanation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please choose how the election results will be shared:"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Public Checkbox -->
+    <CheckBox
+        android:id="@+id/public_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Public (everyone concerned will monitor the election)"
+        android:checked="true"
+        android:textColor="@android:color/black"/>
+
+    <!-- Private Checkbox -->
+    <CheckBox
+        android:id="@+id/private_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Private (only the organizing party will monitor the election)"
+        android:textColor="@android:color/black"/>
+
+    <!-- Proceed Button -->
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm and go back home"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
