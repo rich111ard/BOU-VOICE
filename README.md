@@ -22,7 +22,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/BOU-Voice.git
+git clone https://github.com/rich111ard/BOU-Voice.git
 Open in Android Studio:
 
 Navigate to the project directory and open it using Android Studio.
