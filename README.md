@@ -1,4 +1,3 @@
-BOU Voice
 BOU Voice is a mobile application developed to enhance communication between the Bank of Uganda (BOU) and its stakeholders. The app provides a platform for users to submit suggestions, feedback, and inquiries directly to various departments within the bank, promoting transparency and engagement.
 
 Key Features
